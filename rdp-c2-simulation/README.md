@@ -42,7 +42,9 @@ Using Mythic C2, I connected to the server and ran commands to exfiltrate a test
 ---
 
 ### 📊 ELK Dashboard
-![Elastic Dashboard](images/elastic_dashboard.png)
+![Elastic Dashboard](https://github.com/mbergin123/mbergin123/raw/main/images/Screenshot2025-03-12140755.png)
+
+
 
 Kibana dashboards visualized RDP brute-force events and command activity.
 
