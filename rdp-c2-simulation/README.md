@@ -29,7 +29,7 @@ This project demonstrates a simulated Red Team scenario in which I used multiple
 ### 🔑 Brute-forcing RDP with Hydra
 ![Hydra Command](https://github.com/mbergin123/mbergin123/raw/main/images/image1.png)
 
-Hydra was used to target RDP on the vulnerable server. Upon successful login, credentials were obtained.
+With Kali_Linux, Hydra was used to target RDP on the vulnerable server. Upon successful login, credentials were obtained.
 
 ---
 
