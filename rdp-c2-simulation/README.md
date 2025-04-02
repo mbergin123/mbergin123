@@ -16,11 +16,11 @@ This project demonstrates a simulated Red Team scenario in which I used multiple
 
 | Tool          | Purpose                         |
 |---------------|---------------------------------|
-| Kali Linux    | Offensive security workstation  |
-| Hydra         | Brute force RDP credentials     |
-| Mythic C2     | Command and control             |
-| ELK Stack     | Log ingestion, visualization    |
-| Vultr         | Cloud hosting                   |
+| Kali Linux (https://www.kali.org/)   | Offensive security workstation  |
+| Hydra(https://github.com/vanhauser-thc/thc-hydra)        | Brute force RDP credentials     |
+| Mythic C2(https://github.com/its-a-feature/Mythic)     | Command and control             |
+| ELK Stack(https://www.elastic.co/what-is/elk-stack)     | Log ingestion, visualization    |
+| Vultr(https://www.vultr.com/)         | Cloud hosting                   |
 
 ---
 
