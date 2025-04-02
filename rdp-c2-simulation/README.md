@@ -34,7 +34,8 @@ Hydra was used to target RDP on the vulnerable server. Upon successful login, cr
 ---
 
 ### 👁️ Access with Mythic C2
-![Mythic Execution](https://github.com/mbergin123/mbergin123/raw/main/images/image2.png)(https://github.com/mbergin123/mbergin123/raw/main/images/image10.png)
+![Mythic Execution](https://github.com/mbergin123/mbergin123/raw/main/images/image2.png)
+![Mythic Execution 2](https://github.com/mbergin123/mbergin123/raw/main/images/image17.png)
 
 Using Mythic C2, I connected to the server and ran commands to exfiltrate a test "password" file. I also used Apollo as my Agent
 
