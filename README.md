@@ -12,7 +12,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
-| Red Teaming Simulation & C2 Infrastructure | [RDP C2 Simulation](https://github.com/mbergin123/rdp-c2-simulation) |
+| Red Team Simulation & C2 Infrastucture| [RDP C2 Simulation](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)|
 
 
 ## Tools
