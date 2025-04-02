@@ -27,7 +27,7 @@ This project demonstrates a simulated Red Team scenario in which I used multiple
 ## 📸 Screenshots & Walkthrough
 
 ### 🔑 Brute-forcing RDP with Hydra
-![Hydra Command](images/hydra_command.png)
+![Hydra Command](https://github.com/mbergin123/mbergin123/raw/main/images/image1.png)
 
 Hydra was used to target RDP on the vulnerable server. Upon successful login, credentials were obtained.
 
