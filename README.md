@@ -47,4 +47,4 @@ My journey in computer science has led me to develop a passion for cybersecurity
 ## Projects
 - [RDP C2 Simulation](https://github.com/mbergin123/rdp-c2-simulation): Simulated red team attack using Hydra, Mythic C2, and ELK stack to gain access, exfiltrate data, and visualize activity.
 - SOC Automation Project
-- Extenstive Authentication System & Password Checker | <a href= "https://replit.com/@mbergin305/Python#Authentication_Password.py">Authentication Lab</a> 
+
