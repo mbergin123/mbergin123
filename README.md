@@ -14,7 +14,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 |-----------------------------------------------|----------------------------|
 | Red Team Simulation & C2 Infrastucture| [RDP C2 Simulation](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)|
 | USB Forensics & Malware Analysis| [Suspicious USB Lab](https://github.com/mbergin123/suspicious-usb-lab) 
-| Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer) |
+| Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer)|
 
 
 
@@ -35,9 +35,6 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-REMux-005A9C?style=for-the-badge&logo=windows&logoColor=white" />
     <img src="https://img.shields.io/badge/-FTK%20Imager-000000?style=for-the-badge" />
     <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
-
-
 </div>
 
 ### SIEM
@@ -47,6 +44,16 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
 
 </div>
+
+### 🧪 Forensics
+<div>
+  <img src="https://img.shields.io/badge/-FTK%20Imager-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Notepad-black?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Google%20Search-34A853?style=for-the-badge&logo=Google&logoColor=white" />
+</div>
+
 
 ## Certifications
 <div>
