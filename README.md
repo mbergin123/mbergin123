@@ -87,4 +87,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
   
 - [🌐 Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer): Investigated browser artifacts from a forensic image to uncover a hidden cryptomining Chrome extension using FTK Imager, BrowserHistoryView, and manual JavaScript analysis.
 
+- 🐱 [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab): Conducted a forensic investigation of a web server compromise using Wireshark and CyberChef to analyze a PCAP file, extract malicious payloads, and answer incident response questions.
+
+
 
