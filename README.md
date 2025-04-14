@@ -26,6 +26,8 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
     <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
     <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
+    <img src="https://img.shields.io/badge/-tcpdump-000000?style=for-the-badge&logo=tcpdump&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Netcat-2E8B57?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </div>
 
 ### Endpoint
@@ -53,6 +55,23 @@ My journey in computer science has led me to develop a passion for cybersecurity
   <img src="https://img.shields.io/badge/-Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white" />
   <img src="https://img.shields.io/badge/-Google%20Search-34A853?style=for-the-badge&logo=Google&logoColor=white" />
 </div>
+
+### 🎯 Offensive Tools
+<div>
+<img src="https://img.shields.io/badge/-Hydra-000000?style=for-the-badge&logo=OpenSSL&logoColor=white" />
+<img src="https://img.shields.io/badge/-Mythic%20C2-8A2BE2?style=for-the-badge&logo=metasploit&logoColor=white" />
+<img src="https://img.shields.io/badge/-Crowbar-black?style=for-the-badge&logo=linux&logoColor=white" />
+</div>
+
+### 🛠️ Utility Tools
+<div>
+<img src="https://img.shields.io/badge/-CyberChef-6528B1?style=for-the-badge&logo=codeforces&logoColor=white" />
+<img src="https://img.shields.io/badge/-VirusTotal-0078D7?style=for-the-badge&logo=virustotal&logoColor=white" />
+<img src="https://img.shields.io/badge/-Shodan-FF0000?style=for-the-badge&logo=shodan&logoColor=white" />
+<img src="https://img.shields.io/badge/-MalwareBazaar-3C3C3C?style=for-the-badge&logo=virustotal&logoColor=white" />
+</div>
+
+
 
 
 ## Certifications
