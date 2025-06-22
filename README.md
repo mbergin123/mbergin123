@@ -28,6 +28,8 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
     <img src="https://img.shields.io/badge/-tcpdump-000000?style=for-the-badge&logo=tcpdump&logoColor=white" />
     <img src="https://img.shields.io/badge/-Netcat-2E8B57?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+    <img src="https://img.shields.io/badge/-pfSense-003a63?style=for-the-badge&logo=freebsd&logoColor=white" />
+
 </div>
 
 ### Endpoint
@@ -44,6 +46,12 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
     <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
     <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
+
+</div>
+
+### 🛡️ Vulnerability Scanning
+<div>
+    <img src="https://img.shields.io/badge/-Nessus-007EC6?style=for-the-badge&logo=tenable&logoColor=white" />
 
 </div>
 
@@ -77,7 +85,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 ## Certifications
 <div>
 <img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+
 </div>
 
 ## Projects
