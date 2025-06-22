@@ -1,125 +1,134 @@
-## 🚀 SOAR EDR Project
-
-### 🔍 Overview:
-
-This project showcases the integration of **LimaCharlie**, **Tines**, **Slack**, and **VMware** to create a real-time SOAR (Security Orchestration, Automation, and Response) workflow. It leverages LimaCharlie for endpoint detection and response (EDR), Tines for automation and decision-making, and Slack for alert notifications.
+🚀 SOAR EDR Project
+This project demonstrates a full SOAR (Security Orchestration, Automation, and Response) pipeline using LimaCharlie for detection, Tines for automation and playbooks, Slack for alerts, and VMware to simulate the environment. The goal: automate detection, response, and machine isolation decisions.
 
 ---
 
-### 🛠️ Technology Stack:
+🔍 Overview
+This simulation uses:
 
-* **VMware**: Virtualized Windows environment
-* **LimaCharlie**: EDR for detection and response
-* **Tines**: SOAR platform for automated response
-* **Slack**: Real-time communication for alerting
-* **Email Alerts**: Automated email notifications
+  * A Windows VM as the target system.
 
----
+  * LaZagne malware to generate detectable events.
 
-### 🔄 Project Workflow:
+  * LimaCharlie to detect those events.
 
-1. **🖥️ Setup Windows Machine in VMware**
+  * Tines to automate the workflow.
 
-   * Installed LimaCharlie agent on the Windows VM.
-   * Established successful communication with LimaCharlie.
-
-2. **💾 Deploy LaZagne Malware Simulation**
-
-   * Downloaded and executed LaZagne on the Windows machine.
-   * LimaCharlie successfully detected the new process created by LaZagne.
-
-3. **🔐 Detection and Response Rules in LimaCharlie**
-
-   * Created a custom detection rule to identify LaZagne process activities.
-   * Tested and verified detection in real-time.
-
-4. **🤝 Tines Integration and Playbook Creation**
-
-   * Integrated LimaCharlie with Tines for automated workflows.
-   * Developed a playbook to:
-
-     * Send alerts to Slack and Email when a detection occurs.
-     * Prompt the user if they would like to isolate the machine.
-
-5. **🛡️ User Isolation Decision**
-
-   * If the user selects **No**, a Slack and Email notification is sent indicating that the machine is not isolated.
-   * If the user selects **Yes**, Tines sends an isolation request to LimaCharlie, successfully isolating the machine.
+  * Slack & Email to notify users and capture decisions.
 
 ---
 
-### 📸 Project Screenshots:
-
-(Screenshots from the project slides will be added here for visual reference)
-
-1. 🖥️ Windows Machine Setup
-2. 🔎 LimaCharlie Detection Rules
-3. ⚙️ Tines Playbook Setup
-4. 🔔 Slack Alert Notification
-5. ❓ User Prompt for Isolation
-6. 🔒 Confirmation of Isolation in LimaCharlie
+🧰 Technology Stack
+Component	Purpose
+  * VMware	Windows test environment
+  * LimaCharlie	EDR agent and rule engine
+  * Tines	SOAR platform and playbooks
+  * Slack	Alert notifications
+  * Email	Secondary alert method
 
 ---
 
-### ✅ Key Takeaways:
+🔄 Project Workflow
 
-* Seamless integration of SOAR and EDR technologies.
-* Real-time detection and automated response capabilities.
-* Multi-platform communication through Slack and Email.
-* Enhanced decision-making with user prompts for machine isolation.
+1. 💻 Setup Windows Machine in VMware
 
----
+  * Installed LimaCharlie agent on Windows VM
+  * Verified telemetry and communication
 
-### 🔄 Future Improvements:
-
-* Expanding the playbook for broader threat detection.
-* Integrating additional automation for response enrichment.
-* Implementing periodic scans and reporting for improved visibility.
+![LimaCharlie Agent Installed](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image2.png)
 
 ---
 
-### 📁 Repository Structure:
+2. 🧪 Deploy LaZagne Malware Simulation
 
-```
-├── SOAR_EDR_Project
-│   ├── README.md
-│   ├── VMware_Setup.md
-│   ├── LimaCharlie_Detection.md
-│   ├── Tines_Playbook.md
-│   ├── Slack_Integration.md
-│   ├── Email_Alerts.md
-│   └── Screenshots/
-```
+Downloaded & ran LaZagne using PowerShell
+
+![Downloaded LaZagne](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image5.png)
+
+LimaCharlie captured "new process" telemetry
+
+![New Process](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image6.png)
 
 ---
 
-### ⚙️ Installation Steps:
+3. 🔐 Create & Test Custom Detection Rule in LimaCharlie
 
-1. Clone the repository:
+Started from a template
 
-   ```bash
-   git clone https://github.com/yourusername/SOAR_EDR_Project.git
-   ```
+![Template](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image7.png)
 
-2. Navigate to the project directory:
 
-   ```bash
-   cd SOAR_EDR_Project
-   ```
+Modified to match LaZagne behavior
 
-3. Follow the documentation in each `.md` file for specific configurations and setup.
+![New Rule](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image8.png)
+![Action Part of RUle](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image9.png)
 
----
 
-### 📸 Screenshots:
+Successfully triggered on re-execution
 
-(Attach your images to the `Screenshots/` folder in your repository and reference them here)
+![Re-execution Triggered](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image11.png)
+![Re-execution Triggered](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image12.png)
 
 ---
 
-### ✅ Next Steps:
+4. 🤝 Connect LimaCharlie to Tines
 
-* [ ] Add your screenshots to the `Screenshots/` folder.
-* [ ] Update the README with direct links to each screenshot.
-* [ ] Final review before pushing to GitHub.
+Tines receives events from LimaCharlie
+
+![Tines Recievees Event](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image14.png)
+
+Detection triggers start playbooks
+
+---
+
+5. 💬 Integrate Slack for Notifications
+
+Successfully sent test and event alerts
+
+![Slack notification](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image21.png)
+![Slack Email](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image20.png)
+
+
+Slack displays detection + decision prompt
+
+![Decision Prompt](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image22.png)
+
+
+---
+
+6. 📋 Build Full Tines Playbook
+
+  * Slack & email alerts
+
+  * Slack user prompt: “Isolate this machine?”
+
+  * If-else decision branch
+
+![Playbook](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image25.png)
+
+---
+
+7. 🔄 User Decision: Do Not Isolate
+
+Prompt returned “No”
+
+Tines branch sent Slack message:
+
+“This computer was not isolated”
+
+![Descision on Isolate or NOt](https://github.com/mbergin123/mbergin123/raw/main/soar-edr-project/imageSOAR/image23.png)
+
+---
+
+📌 Key Takeaways
+  * Built end-to-end SOAR workflow from scratch
+
+  * Created and tested custom detection rules
+
+  * Automated Slack & email alerts
+
+  * Included user-driven isolation response
+
+  * Successfully executed a live system isolation
+
 
