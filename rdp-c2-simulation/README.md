@@ -1,6 +1,8 @@
   🛡️ Mythic & Kali Linux RDP Brute Force Attack Simulation
 This project simulates a real-world Red Team engagement using Kali Linux, Hydra, and the Mythic C2 framework to gain and maintain access to a Windows Server hosted on Vultr. It demonstrates offensive security techniques including brute-force attacks, payload deployment, and command-and-control (C2) operations.
 
+---
+
 🖥️ Lab Environment
   * Attacker Machine: Kali Linux
 
@@ -20,6 +22,8 @@ This project simulates a real-world Red Team engagement using Kali Linux, Hydra,
 
   * RDP & Windows command line utilities
 
+---
+
 🔧 Phase 1: Server Setup
 Deployed a Windows Server using Vultr cloud hosting
 
@@ -30,6 +34,7 @@ Enabled RDP access and configured basic firewall rules
 
 
 
+---
 
 ⚙️ Phase 2: Mythic Installation
 Installed Mythic on the server using PowerShell and Git
@@ -44,12 +49,16 @@ Reviewed MITRE ATT&CK mappings within the Mythic platform
 
 ![MITRE ATT&CK](https://github.com/mbergin123/mbergin123/raw/main/images/image7.png)
 
+---
+
 🛠️ Phase 3: Pre-Attack Configuration
   * Created a fake sensitive file on the Windows Server: passwords.txt
 
 Prepared the environment for brute-force attack simulation
 
 ![Kali Linux](https://github.com/mbergin123/mbergin123/raw/main/images/image9.png)
+
+---
 
 🚨 Phase 4: RDP Brute Force Attack
 Used Hydra on Kali Linux with a default wordlist to brute-force RDP credentials
@@ -71,6 +80,8 @@ net user, net group
 Disabled Windows Defender to ensure payload execution
 
 ![Disabled Windows Defender](https://github.com/mbergin123/mbergin123/raw/main/images/image14.png)
+
+---
 
 
 💣 Phase 5: Payload Deployment & C2 Connection
@@ -96,6 +107,7 @@ Retrieved the fake sensitive file as proof of access
 
 ![File Captured](https://github.com/mbergin123/mbergin123/raw/main/images/filecapture.png)
 
+---
 
 ✅ Project Takeaways
 🔧 Built & configured a vulnerable Windows Server in the cloud
