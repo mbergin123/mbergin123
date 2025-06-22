@@ -13,7 +13,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
 | Pen Testing & Forensics Investigations | [Mythic C2 Project](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)
-| USB Forensics & Malware Analysis| [Suspicious USB Lab](https://github.com/mbergin123/suspicious-usb-lab) 
+| SOAR Engineering & Response Automation| [SOAR EDR Project](https://github.com/mbergin123/mbergin123/blob/main/soar-edr-project/README.md)
 | Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer)|
 | PCAP Network Forensics & Exploit Analysis   | [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab)                  |
 
