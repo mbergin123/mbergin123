@@ -68,7 +68,7 @@ nmap -O -v 100.30.10.238
 During reconnaissance and vulnerability scanning I discovered multiple exposed services and several high-risk findings across the lab hosts:
 
 - **100.16.16.50 (Windows Server 2003)** — SMB (445), NetBIOS (139), RPC/LSA (1026), RDP (3389) open. NSE script `smb-vuln-ms08-067` reported **VULNERABLE** (CVE-2008-4250).  
-  Screenshot: `images/nmap_ms08-067.png`
+  Screenshot: ![nmap ms08 result](images/namp100.16.16.50.P1.png)
 
 - **100.20.9.25 (Windows Server 2008 R2)** — SMB (445), NetBIOS (139), multiple ephemeral ports open prior to firewall changes; after hardening only RDP remained reachable from allowed IPs.  
   Before screenshot: `images/nmap_2008_before.png`  
