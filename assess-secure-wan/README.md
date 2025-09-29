@@ -135,7 +135,7 @@ tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
 - For the remote server 100.16.16.50 I wanted to make sure only port 3389 was open
   ![100.16 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20151913.png)
 - For the remote server 100.20.9.25 I wanted to make sure only port 3389 was open
-  ![100.20 post-hardening scan](images/19_nmap_10020_after.png)
+  ![100.20 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20153316.png)
   ![100.30 post-checks](images/20_nmap_10030_after.png)
 
 ---
