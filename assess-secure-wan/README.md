@@ -4,12 +4,9 @@
 [![Tools: nmap](https://img.shields.io/badge/tools-nmap-blue)](https://nmap.org)
 [![Tools: tcpdump](https://img.shields.io/badge/tools-tcpdump-orange)](https://www.tcpdump.org)
 [![Tools: ClamWin/AVG](https://img.shields.io/badge/tools-AVs-lightgrey)](#)
-[![License](https://img.shields.io/badge/license-lab--demo-lightgrey)](#license--contact)
 
----
-
-## Short summary
-Hands-on lab demonstrating reconnaissance, malware removal, and host hardening across a small isolated WAN. Tools used: `nmap` (discovery + NSE scripts), `tcpdump` (pcap capture), ClamWin / AVG (malware removal), and Windows Firewall / `netsh` (host hardening). This repository contains the commands I ran, concise findings, verification steps, and evidence artifacts (screenshots & pcaps) showing before/after results.
+**Short summary**  
+Hands-on lab demonstrating reconnaissance, malware removal, and host hardening across a small lab WAN. This repo contains commands, findings, verification steps, and evidence screenshots.
 
 ---
 
@@ -18,37 +15,33 @@ Hands-on lab demonstrating reconnaissance, malware removal, and host hardening a
 2. [Lab parts (what I did)](#lab-parts-what-i-did)  
 3. [Key commands (copy/paste-ready)](#key-commands-copypaste-ready)  
 4. [Findings (concise)](#findings-concise)  
-5. [Before / after comparison (how I showed hardening)](#before--after-comparison-how-i-showed-hardening)  
-6. [Evidence layout (what I saved)](#evidence-layout-what-i-saved)  
+5. [Before / after comparison](#before--after-comparison)  
+6. [Evidence images (ordered)](#evidence-images-ordered)  
 7. [How I verified remediation](#how-i-verified-remediation)  
 8. [Recommendations & next steps](#recommendations--next-steps)  
-9. [Skills demonstrated](#skills-demonstrated)  
-10. [How to reproduce (notes & safety)](#how-to-reproduce-notes--safety)  
-11. [License & contact](#license--contact)
+9. [License & contact](#license--contact)
 
 ---
 
 ## Project overview
-This project documents four lab parts performed in an isolated WAN environment:
+Four lab parts performed in an isolated WAN environment:
+- Part 1 — Scan the WAN (discovery, OS detection, NSE checks).
+- Part 2 — Clean vulnerable systems (ClamWin / AVG).
+- Part 3 — Reduce attack surface on Windows 2003 (enable firewall, scope exceptions).
+- Part 4 — Reduce attack surface on Windows 2008 R2 (Advanced Security rules, logging).
 
-- **Part 1 — Scan the WAN:** discovery, OS detection, NSE checks, and decoy scans.  
-- **Part 2 — Clean vulnerable systems:** use ClamWin and AVG to detect and remove malware (EICAR/BO test files).  
-- **Part 3 — Reduce the attack surface on Windows 2003:** enable Windows Firewall, restrict exception scope to specific IPs, configure logging, create ICMP rules, verify via `nmap`.  
-- **Part 4 — Reduce the attack surface on Windows 2008:** Windows Firewall with Advanced Security — disable unnecessary inbound rules, create scoped rules (RDP + ICMP), verify.
-
-**Targets used (lab examples)**  
+**Targets (lab examples)**  
 - `100.16.16.50` — Windows Server 2003  
 - `100.20.9.25` — Windows Server 2008 R2  
-- `100.30.10.238` — Debian Linux (scanner/monitor host)
+- `100.30.10.238` — Debian Linux (scan/monitor host)
 
 ---
 
 ## Lab parts (what I did)
-- Reconnaissance & scanning using `nmap` (OS detection & NSE scripts).  
-- Packet capture on the Debian host using `tcpdump` to capture decoy activity during stealth scans.  
-- Detected and removed test trojans using ClamWin and AVG (EICAR / B.O. test artifacts).  
-- Hardened Windows hosts by enabling Windows Firewall across Domain/Private/Public profiles, restricting exception scopes to allowed IPs, creating ICMP inbound rules, enabling firewall logging, and leaving only required inbound services (RDP).  
-- Verified changes with follow-up `nmap` scans and pcap review.
+- Reconnaissance with `nmap` (OS detection + NSE scripts).  
+- Packet capture on the Debian host using `tcpdump` to capture decoy activity.  
+- Cleaned infected systems with ClamWin and AVG; quarantined EICAR/B.O. test files.  
+- Hardened Windows hosts: enabled firewall, set scope, logging, ICMP rules, and limited inbound services.
 
 ---
 
@@ -56,47 +49,119 @@ This project documents four lab parts performed in an isolated WAN environment:
 
 ### Discovery & OS detection
 ```bash
-# discovery + OS detection (verbose)
 nmap -O -v 100.16.16.50
 nmap -O -v 100.20.9.25
 nmap -O -v 100.30.10.238
 ```
 
+### Vulnerability NSE check (MS08-067 example)
+```bash
+nmap --script=smb-vuln-ms08-067 -p445 100.16.16.50
+```
+
+### SSH hostkey enumeration (example)
+```bash
+nmap --script=ssh-hostkey -p22 100.30.10.238
+```
+
+### Packet capture (on Debian monitor host)
+```bash
+tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
+# analyze with tcpdump -r marilyn_capture.pcap
+```
+
+---
+
 ## Findings (concise)
 
-**Summary:**  
-During reconnaissance and vulnerability scanning I discovered multiple exposed services and several high-risk findings across the lab hosts:
+**Summary:** During reconnaissance and scanning I found multiple exposed services and several high-risk findings:
 
-- **100.16.16.50 (Windows Server 2003)** — SMB (445), NetBIOS (139), RPC/LSA (1026), RDP (3389) open. NSE script `smb-vuln-ms08-067` reported **VULNERABLE** (CVE-2008-4250).  
-  Screenshot: ![nmap ms08 result](images/namp100.16.16.50.P1.png)
+- **100.16.16.50 (Windows Server 2003)** — I performed nmpa -O -v and found multiple ports open such as: SMB (445), NetBIOS (139), RPC/LSA (1026), RDP (3389) open. At the command prompt I entered `smb-vuln-ms08-067` to check for SMB vulnerability, specifically the MS08-067 exploit
 
-- **100.20.9.25 (Windows Server 2008 R2)** — SMB (445), NetBIOS (139), multiple ephemeral ports open prior to firewall changes; after hardening only RDP remained reachable from allowed IPs.  
-  Before screenshot: `images/nmap_2008_before.png`  
-  After screenshot: `images/nmap_2008_after.png`
+   ![NSE MS08-067 result](https://github.com/mbergin123/mbergin123/blob/main/images/10.30.10.238.OS.Open.Ports.png)
+  
+  ![NSE-MS08-067-Vulnerable](https://github.com/mbergin123/mbergin123/blob/main/images/nampScript100.16.16.50P1.png)
+  
+- **100.20.9.25 (Windows Server 2008 R2)** — SMB (445), NetBIOS (139), multiple ephemeral ports. SMB script output indicated possible service issues prior to firewall hardening.  
 
-- **100.30.10.238 (Debian Linux - monitoring host)** — SSH (22), HTTP (80), telnet (23), rpcbind (111). SSH hostkeys enumerated using the `ssh-hostkey` NSE script; tcpdump capture confirmed decoy IPs appearing in the SYN stream during a stealth scan.  
-  SSH hostkeys screenshot: `images/ssh_hostkeys.png`  
-  tcpdump capture: `evidence/marilyn_capture_s2.pcap` (packet capture)
+  ![100.20 before](https://github.com/mbergin123/mbergin123/blob/main/images/nmap100.20.9.25openPortsP1.2.png)
+  
+  ![100.20_vulnerable](https://github.com/mbergin123/mbergin123/blob/main/images/nmapScript100.20.9.25Part1.2.png)
 
----
+- **172.30.0.31 (Windows Server 2012 R2)** — Scanned server for open ports. I foudn 12 open ports. Port 135 could be vulnerable to MS03=026 (overflow attack). Port 139 could be vulnerable to MS03-067 (Remote Code Execution). Port 445 could be vulnerable to MS08-67 ^ MS17-010 (Remote Coed Execution) and (Wannacry).
 
-## Before / after comparison (how to show)
+  ![172.30 nmap](https://github.com/mbergin123/mbergin123/blob/main/images/nmap173.30.0.31.png)
+  
 
-**What to show:** include two nmap outputs (or screenshots) per target — one from **before** remediation and one **after** remediation — and then a short bullet explanation of why the results changed.
-
-**Example (for 100.20.9.25):**
-- Before: many ephemeral ports + SMB exposed (screenshot `images/nmap_2008_before.png`).
-- After: firewall enabled for Domain/Private/Public profiles, exception rules narrowed to specific IPs, ICMP allowed only via a named inbound rule — result: only port 3389 visible from the scanner IP (screenshot `images/nmap_2008_after.png`).
-- Possible reasons for differences:
-  - Windows Firewall was previously off or permissive → now set to Block (inbound) with explicit allowed rules.
-  - Scoped rules reduced the attack surface (exceptions limited to allowed IPs).
-  - Logging & service changes (stopping unnecessary services) removed listening sockets.
+- **100.30.10.238 (Debian)** — SSH (22), HTTP (80), telnet (23), rpcbind (111). SSH hostkeys enumerated; tcpdump confirmed decoy IPs during stealth scan.
+  ![nmap.100.30](https://github.com/mbergin123/mbergin123/blob/main/images/nmap100.30.10.238Part1.2.png)
+  
+  ![ssh hostkeys](https://github.com/mbergin123/mbergin123/blob/main/images/ssh-hoskey.3encrypt.footprint.keys.png)
+  
+  ![tcpdump decoys](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-23%20213734.png)
 
 ---
 
-## Evidence layout (what I saved in the repo)
+## Before / after (hardening & malware removal)
 
-Place these files in the indicated folders so reviewers can quickly inspect evidence:
+### Malware removal evidence
+- On remote server 100.20.9.25 ClamWin scan (infections found). The virus found is a live Trojan.BO which would allow a BOclient to control the remote system if they are logged in locally
+  ![ClamWin scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-21%20104329.png)
+
+- ClamWin removal confirmation & logs.  
+  ![ClamWin removed files](https://github.com/mbergin123/mbergin123/blob/main/images/clamwinsvirusremoved.png)
+
+- On remote server 172.30.0.31 AVGnfor Business quarantine confirmation (evidence: EICAR test files moved to quarantine). AVG was not orginally turned on, after careful configuration the AVG anti virus was turned on.
+  ![AVG quarantine](https://github.com/mbergin123/mbergin123/blob/main/images/avgTurnedOn.png)  
+  ![AVG dashboard](https://github.com/mbergin123/mbergin123/blob/main/images/avg_malware_removed.png)
+
+### Firewall hardening evidence
+- On remote server 100.16.16.50 Firewall initially off / unprotected (before).  
+  ![Firewall before](images/12_firewall_before.png)
+
+- Firewall turned on, scoped exceptions added, logging enabled.  
+  ![Firewall on](https://github.com/mbergin123/mbergin123/blob/main/images/firewall_windows_turned_on.png)  
+  ![Firewall scope](https://github.com/mbergin123/mbergin123/blob/main/images/firewall_scope.png)  
+  ![Firewall logging](https://github.com/mbergin123/mbergin123/blob/main/images/firewall_changed_log_settings.png)  
+  ![ICMP rule: echo request limited](https://github.com/mbergin123/mbergin123/blob/main/images/firewall_configured_echo_request_limit.png)
+
+- Export of rules / documented inbound rules (evidence).  
+  ![Exported rules screenshot](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20152615.png)
+
+---
+
+## How I verified remediation
+- Follow-up `nmap` scans showed required ports filtered or limited after hardening.
+- For the remote server 100.16.16.50 I wanted to make sure only port 3389 was open
+  ![100.16 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20151913.png)
+- For the remote server 100.20.9.25 I wanted to make sure only port 3389 was open
+  ![100.20 post-hardening scan](images/19_nmap_10020_after.png)
+  ![100.30 post-checks](images/20_nmap_10030_after.png)
+
+---
+
+## Evidence layout (what to save in the repo)
+Place the following under `images/` and include:
+- Before/after screenshots per host,
+- NSE / script outputs (images),
+- Malware scan & quarantine screenshots,
+- Firewall settings (scope, logging, ICMP),
+- Exported rules screenshot,
+- tcpdump capture (pcap) in an `evidence/pcaps` folder if you want to include raw captures (optional).
+
+---
+
+## Recommendations & next steps
+- Apply vendor patches (where available) or isolate legacy systems (e.g., Windows 2003).  
+- Implement centralized AV and update signature sets.  
+- Use host-based intrusion detection and scheduled scans.  
+- Replace or isolate obsolete services (Telnet, rpcbind) and use least-privilege firewall rules.
+
+---
+
+## License & contact
+This repository is a lab demo for assessment & remediation techniques — not production configuration. Contact: `you@example.com`
+
 
 
 
