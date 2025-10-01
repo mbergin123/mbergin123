@@ -34,6 +34,7 @@ Four lab parts performed in an isolated WAN environment:
 - `100.16.16.50` — Windows Server 2003  
 - `100.20.9.25` — Windows Server 2008 R2  
 - `100.30.10.238` — Debian Linux (scan/monitor host)
+- `172.30.0.31` — Windows Server 2012 R2
 
 ---
 
@@ -135,21 +136,12 @@ tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
 - For the remote server 100.16.16.50 I wanted to make sure only port 3389 was open
   ![100.16 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20151913.png)
 - For the remote server 100.20.9.25 I wanted to make sure only port 3389 was open
-  ![100.20 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20153316.png)
-  ![100.30 post-checks](images/20_nmap_10030_after.png)
+  ![100.20 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-23%20211946.png)
+-Remediation for the Debian scan host (100.30.10.238) and the additional Windows Server 2012 R2 host (172.30.0.31) in this lab was limited to malware identification and removal via antivirus tools (ClamWin / AVG). I validated remediation by preserving AV logs and screenshots showing files moved to quarantine, and by performing follow-up network/service scans to confirm no unexpected services or malicious artifacts persisted. Note: the lab scope did not include OS or firewall hardening for these hosts; additional hardening steps (firewall rules, patching, configuration baseline) are recommended as next steps.
+
 
 ---
 
-## Evidence layout (what to save in the repo)
-Place the following under `images/` and include:
-- Before/after screenshots per host,
-- NSE / script outputs (images),
-- Malware scan & quarantine screenshots,
-- Firewall settings (scope, logging, ICMP),
-- Exported rules screenshot,
-- tcpdump capture (pcap) in an `evidence/pcaps` folder if you want to include raw captures (optional).
-
----
 
 ## Recommendations & next steps
 - Apply vendor patches (where available) or isolate legacy systems (e.g., Windows 2003).  
