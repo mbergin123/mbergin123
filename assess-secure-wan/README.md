@@ -118,7 +118,6 @@ tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
 
 ### Firewall hardening evidence
 - On remote server 100.16.16.50 Firewall initially off / unprotected (before).  
-  ![Firewall before](images/12_firewall_before.png)
 
 - Firewall turned on, scoped exceptions added, logging enabled.  
   ![Firewall on](https://github.com/mbergin123/mbergin123/blob/main/images/firewall_windows_turned_on.png)  
@@ -137,7 +136,16 @@ tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
   ![100.16 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-24%20151913.png)
 - For the remote server 100.20.9.25 I wanted to make sure only port 3389 was open
   ![100.20 post-hardening scan](https://github.com/mbergin123/mbergin123/blob/main/images/Screenshot%202025-09-23%20211946.png)
--Remediation for the Debian scan host (100.30.10.238) and the additional Windows Server 2012 R2 host (172.30.0.31) in this lab was limited to malware identification and removal via antivirus tools (ClamWin / AVG). I validated remediation by preserving AV logs and screenshots showing files moved to quarantine, and by performing follow-up network/service scans to confirm no unexpected services or malicious artifacts persisted. Note: the lab scope did not include OS or firewall hardening for these hosts; additional hardening steps (firewall rules, patching, configuration baseline) are recommended as next steps.
+
+- For servers where full hardening was not required in the scope of the lab (100.30.10.238 and 172.30.0.31), remediation consisted of malware detection and removal only. I verified remediation by:
+
+- Running antivirus scans (ClamWin / AVG) and capturing results showing infected files detected and moved to quarantine (screenshots and ClamWin/AVG logs included in the images/ folder).
+
+- Re-scanning the host with nmap where appropriate to verify that services matched expectations after removal (e.g. ports/services remained the same when no firewall changes were requested).
+
+- Hashing or noting filenames and paths of quarantined files and including the AV log output in the evidence folder.
+
+- Where hardening was performed (Windows Server 2003 and 2008 targets) I documented firewall rule changes, ICMP scope restrictions, and logged verification scans showing reduced attack surface. For hosts without hardening, the primary verification required is AV removal + re-scan and retention of logs/screenshots as evidence.
 
 
 ---
