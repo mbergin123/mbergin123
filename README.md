@@ -28,7 +28,10 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
     <img src="https://img.shields.io/badge/-tcpdump-000000?style=for-the-badge&logo=tcpdump&logoColor=white" />
     <img src="https://img.shields.io/badge/-Netcat-2E8B57?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-    <img src="https://img.shields.io/badge/-pfSense-003a63?style=for-the-badge&logo=freebsd&logoColor=white" />
+    <img src="https://img.shields.io/badge/-pfSense-003a63?style=for-the-badge&logo=freebsd&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/-PuTTY-000000?&style=for-the-badge&logo=putty&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/-tcpdump-000000?&style=for-the-badge&logo=linux&logoColor=white" />
+
 
 </div>
 
@@ -39,6 +42,8 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-REMux-005A9C?style=for-the-badge&logo=windows&logoColor=white" />
     <img src="https://img.shields.io/badge/-FTK%20Imager-000000?style=for-the-badge" />
     <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/-ClamWin-5C5C5C?&style=for-the-badge&logo=linux&logoColor=white" />
+    <img src="https://img.shields.io/badge/-AVG-2B9BD6?&style=for-the-badge&logo=avg&logoColor=white" />
 </div>
 
 ### SIEM
@@ -52,6 +57,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 ### 🛡️ Vulnerability Scanning
 <div>
     <img src="https://img.shields.io/badge/-Nessus-007EC6?style=for-the-badge&logo=tenable&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nmap-7C8BFF?&style=for-the-badge&logo=nmap&logoColor=white" /> 
 
 </div>
 
@@ -77,6 +83,12 @@ My journey in computer science has led me to develop a passion for cybersecurity
 <img src="https://img.shields.io/badge/-VirusTotal-0078D7?style=for-the-badge&logo=virustotal&logoColor=white" />
 <img src="https://img.shields.io/badge/-Shodan-FF0000?style=for-the-badge&logo=shodan&logoColor=white" />
 <img src="https://img.shields.io/badge/-MalwareBazaar-3C3C3C?style=for-the-badge&logo=virustotal&logoColor=white" />
+</div>
+
+### <h3>Host hardening / Windows config</h3>
+<div>
+    <img src="https://img.shields.io/badge/-Windows_Firewall-0078D6?&style=for-the-badge&logo=windows&logoColor=white" />
+    <img src="https://img.shields.io/badge/-netsh-008080?&style=for-the-badge&logo=windows&logoColor=white" />
 </div>
 
 
