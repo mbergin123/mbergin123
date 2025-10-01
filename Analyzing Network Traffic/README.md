@@ -1,77 +1,48 @@
-# Analyzing Network Traffic
+### 🧭 Analyzing Network Traffic to Create a Baseline Definition
 
-Use this section as we go. I’ll append each step and screenshot you send so everything stays in order for the final README.
+**Course/Lab:** Jones & Bartlett Learning — *Analyzing Network Traffic to Create a Baseline Definition*
+**Author:** Marilyn Bergin
 
----
+### 📌 Overview
 
-## Intake — Lab Materials
+This project demonstrates capturing, transferring, and analyzing network traffic to establish a **network baseline**. The lab simulates a real-world enterprise environment with servers, routers, switches, and vulnerable applications. Using tools such as **TCPdump, Wireshark, FileZilla, Tftpd64, and NetWitness Investigator**, I captured normal and malicious traffic, analyzed protocol distributions, and verified file transfers across the environment.
 
-### 📖 Introduction
+This documentation highlights an end-to-end demonstration of real-world skills in:
 
-* Corporate networks remain vulnerable to internal and external threats despite firewalls and security appliances.
-* Network professionals use protocol capture/analyzer tools to troubleshoot, enforce policies, and detect rogue activity.
-* Establishing a **baseline definition** helps identify anomalies, malware, or unusual traffic.
-* Baseline creation is an ongoing process, not a one-time task.
-* This lab focuses on capturing and analyzing network traffic using tools like **TCPdump, Wireshark, and NetWitness Investigator**.
+* Packet capture and command-line analysis
+* Using Wireshark for deep inspection
+* File transfers with FTP/TFTP and validation
+* Detecting vulnerabilities (e.g., XSS in DVWA)
+* Using NetWitness Investigator for forensic investigation
 
+This project highlights my ability to not only use security tools, but also to interpret results, validate findings, and document them in a professional manner.
 
 ### 🎯 Learning Objectives
 
-1. Capture live network traffic with Wireshark and TCPdump.
-2. Analyze packet capture data in NetWitness Investigator.
-3. Use Wireshark statistics to identify baseline definitions.
-4. Identify common network protocols (HTTP, Telnet, FTP, TFTP, SSH) in packet captures.
-5. Discuss how baseline definitions are created and maintained.
-
-
-### 📋 Lab Overview
-
-**Section 1:** Guided exercises
-
-1. Capture traffic with TCPdump.
-2. Use Wireshark to capture & analyze TCP/IP.
-3. Use Tftpd64 and FileZilla for file transfer traffic.
-4. Apply Wireshark filters.
-5. View capture in NetWitness Investigator.
-
-**Section 2:** Apply knowledge with less guidance, expanded tasks, `grep` with TCPdump files, and NetWitness Request/Response view.
-
-**Section 3:** Independent exploration of the virtual environment, answering questions and simulating real-world scenarios.
-
-**Screenshots provided:**
-
-* `lab_overview_1.png`
-* `lab_overview_2.png`
-* `lab_overview_3.png`
+* Capture live traffic with TCPdump and Wireshark
+* Identify baseline network protocols and normal traffic flows
+* Generate traffic with FTP, TFTP, SSH, and Telnet
+* Detect insecure applications (DVWA XSS reflected attack)
+* Transfer and verify files with FileZilla and Tftpd64
+* Use NetWitness Investigator for forensic packet analysis
 
 ### 🗺️ Topology
 
-Virtual lab environment includes:
+Lab environment included:
 
-* vWorkstation (Windows Server 2016)
-* TargetWindows02 (Windows Server 2016)
-* DVWA (Debian Linux)
-* Cisco IOS Emulator devices:
+* **Servers/Hosts:** DVWA (Debian Linux), vWorkstation (Windows Server 2016), Target Windows 2016
+* **Network Devices:** Cisco Routers (Norfolk 2811, Tampa 2811), Cisco Switches (LAN Switch1 & Switch2)
+* **Applications/Tools:** TCPdump, Wireshark, PuTTY, FileZilla, Tftpd64, NetWitness Investigator
 
-  * Router
-  * Norfolk 2811
-  * Tampa 2811
-  * LAN Switch 1
-  * LAN Switch 2
-
-**Screenshot provided:** `topology.png`
 
 ### 🧰 Tools & Software
 
-* Damn Vulnerable Web Application (DVWA)
-* FileZilla
-* NetWitness Investigator
-* PuTTY
-* TCPdump
-* Tftpd64
-* Wireshark
+* **Capture/Analysis:** TCPdump, Wireshark, NetWitness Investigator
+* **File Transfer:** FileZilla (FTP), Tftpd64 (TFTP)
+* **Access/Connectivity:** PuTTY (SSH/Telnet)
+* **Target Application:** Damn Vulnerable Web App (DVWA)
 
-**Screenshot provided:** `tools_software.png`
+
 
 ---
 
@@ -108,58 +79,11 @@ Virtual lab environment includes:
 | 27 | 2025-10-01 | NetWitness Investigator (172.30.0.10)   | Opened NetWitness Investigator dashboard                            | —                               | Begin analysis of pcap file                       | Dashboard active with Demo Collection loaded; ready to import capture for analysis                                                                              | NetWisDash.png                                                        |                  |               |                    |                                                            |                      |
 | 28 | 2025-10-01 | NetWitness Investigator (172.30.0.10)   | Uploaded Wireshark packet capture into Investigator                 | —                               | Review traffic by service, IPs, events            | Analysis shows service types (SSH, FTP, TFTP, NETBIOS), source/destination IPs, action events (`put`, `login`), and user account `student`; PDF file detected.  | NetWissPacket.png                                                     |                  |               |                    |                                                            |                      |
 | 29 | 2025-10-01 | NetWitness Investigator (172.30.0.10)   | Viewed FTP details in Investigator                                  | —                               | Extract filename and credentials from FTP session | Found `anyconnect_adminguide.pdf` as filename and password `p@ssw0rd!` associated with the FTP transfer.                                                        | Filename&Pass.png                                                     |                  |               |                    |                                                            |                      |
-| 17 | 2025-10-01 | PuTTY (DVWA 172.30.0.13)                | SSH login as `student`                                              | —                               | Test SSH connectivity                             | Logged into DVWA server successfully and then exited session                                                                                                    | DVWAputtyssh.png                                                      |                  |               |                    |                                                            |                      |
+
 
 ---
 
-## README.md (GitHub Draft)
 
-### 🧭 Analyzing Network Traffic to Create a Baseline Definition
-
-**Course/Lab:** Jones & Bartlett Learning — *Analyzing Network Traffic to Create a Baseline Definition*
-**Author:** Marilyn Bergin
-
-### 📌 Overview
-
-This project demonstrates capturing, transferring, and analyzing network traffic to establish a **network baseline**. The lab simulates a real-world enterprise environment with servers, routers, switches, and vulnerable applications. Using tools such as **TCPdump, Wireshark, FileZilla, Tftpd64, and NetWitness Investigator**, I captured normal and malicious traffic, analyzed protocol distributions, and verified file transfers across the environment.
-
-Employers reviewing this project will see a full end-to-end demonstration of practical skills in:
-
-* Packet capture and command-line analysis
-* Using Wireshark for deep inspection
-* File transfers with FTP/TFTP and validation
-* Detecting vulnerabilities (e.g., XSS in DVWA)
-* Using NetWitness Investigator for forensic investigation
-
-This project highlights my ability to not only use security tools, but also to interpret results, validate findings, and document them in a professional manner.
-
-### 🎯 Learning Objectives
-
-* Capture live traffic with TCPdump and Wireshark
-* Identify baseline network protocols and normal traffic flows
-* Generate traffic with FTP, TFTP, SSH, and Telnet
-* Detect insecure applications (DVWA XSS reflected attack)
-* Transfer and verify files with FileZilla and Tftpd64
-* Use NetWitness Investigator for forensic packet analysis
-
-### 🗺️ Topology
-
-Lab environment included:
-
-* **Servers/Hosts:** DVWA (Debian Linux), vWorkstation (Windows Server 2016), Target Windows 2016
-* **Network Devices:** Cisco Routers (Norfolk 2811, Tampa 2811), Cisco Switches (LAN Switch1 & Switch2)
-* **Applications/Tools:** TCPdump, Wireshark, PuTTY, FileZilla, Tftpd64, NetWitness Investigator
-
-(*Screenshot: topology.png*)
-
-### 🧰 Tools & Software
-
-* **Capture/Analysis:** TCPdump, Wireshark, NetWitness Investigator
-* **File Transfer:** FileZilla (FTP), Tftpd64 (TFTP)
-* **Access/Connectivity:** PuTTY (SSH/Telnet)
-* **Target Application:** Damn Vulnerable Web App (DVWA)
-
-(*Screenshot: tools_software.png*)
 
 ---
 
@@ -168,17 +92,21 @@ Lab environment included:
 #### Step 1: Launch PuTTY on DVWA server & confirm TCPdump
 
 Connected to **172.30.0.13** and confirmed `tcpdump` availability using `man tcpdump`.
-(*Screenshot: FirstPutty.png, ResultsOfFirstPutty.png*)
+
+![First_Putty](https://github.com/mbergin123/mbergin123/blob/main/images/FirstPutty.png)
+![Result_of_PuTTy](https://github.com/mbergin123/mbergin123/blob/main/images/ResutlsOfFirstPutty.png)
 
 #### Step 2: Identify Interfaces
 
 Inspected `/etc/network/interfaces` to confirm **eth0** (static 172.30.0.13) was the capture interface.
-(*Screenshot: ResultsOfCatInter.png*)
+
+![Results_of_Cat_Interface](https://github.com/mbergin123/mbergin123/blob/main/images/ResultsOfCatInter.png)
 
 #### Step 3: Start Capture
 
 Ran `tcpdump -i eth0 -n -w tcpdumpcapturefile` to capture packets directly to file.
-(*Screenshot: tcpdumpCapStart.png*)
+
+![Tcpdump_capture_start](https://github.com/mbergin123/mbergin123/blob/main/images/tcpdumpCapStart.png)
 
 #### Step 4: Generate HTTP Traffic via DVWA
 
@@ -189,17 +117,22 @@ Accessed DVWA homepage and modules to create baseline HTTP traffic.
 * Tested XSS reflected input with name *Simon*
 * Confirmed XSS vulnerability with `<script>alert('this is a vulnerability');</script>`
   (*Screenshots: DVWAStart.png, LevelLow.png, XXSReflected.png, ThisIsVul.png*)
+  ![DWS_GUI](https://github.com/mbergin123/mbergin123/blob/main/images/DVWAStart.png)
+  ![Low_level](https://github.com/mbergin123/mbergin123/blob/main/images/LevelLow.png)
+  ![Simon](https://github.com/mbergin123/mbergin123/blob/main/images/XXSReflected.png)
+  ![XXS_Vulnerability](https://github.com/mbergin123/mbergin123/blob/main/images/ThisIsVul.png)
 
 #### Step 5: Validate Capture Results
 
 Stopped capture and verified with `tcpdump -n -r tcpdumpcapturefile`. Observed HTTP GET/200 OK requests between **172.30.0.2** and **172.30.0.13**.
-(*Screenshot: ResultsOfCap.png*)
+
+![Results_of_tcpdump_Capture](https://github.com/mbergin123/mbergin123/blob/main/images/ResultsOfCap.png)
 
 #### Step 6: Locate XSS Payload in Capture
 
 Filtered capture with grep to locate encoded `<script>` payload within HTTP stream.
-(*Screenshot: AlertScriptFound.png*)
 
+![AlertScriptFound](https://github.com/mbergin123/mbergin123/blob/main/images/AlertScriptFound.png)
 ---
 
 ### 🔹 Section 2 — Wireshark Analysis
@@ -207,32 +140,39 @@ Filtered capture with grep to locate encoded `<script>` payload within HTTP stre
 #### Step 7: Launch Wireshark on Remote Server (172.30.0.10)
 
 Captured live traffic (TCP, UDP, Telnet, SSH, ARP).
-(*Screenshot: WSstart.png*)
+
+![WireShark_Start](https://github.com/mbergin123/mbergin123/blob/main/images/WSstart.png)
 
 #### Step 8: Switch & Router Checks
 
 Ran `show interface` and `show vlan` on **LanSwitch1 (172.16.8.5)**, **LanSwitch2 (172.16.20.5)**, and **Tampa 2811 (172.17.8.1)** to verify interface status and VLAN mapping.
-(*Screenshots: showinter.png, showvlan.png*)
+
+![Show_interface](https://github.com/mbergin123/mbergin123/blob/main/images/showInter.png)
+![Show_Vlan](https://github.com/mbergin123/mbergin123/blob/main/images/showvlan.png)
 
 #### Step 9: Additional SSH Checks
 
 Ran `show interface` on **172.16.8.1**, confirming FastEthernet0/0 up and configured.
-(*Screenshot: showint2.png*)
+
+![Show_Interface2](https://github.com/mbergin123/mbergin123/blob/main/images/showint2.png)
 
 #### Step 10: SSH into DVWA Server
 
 Logged in as `student` to **172.30.0.13** and confirmed session access.
-(*Screenshot: DVWAputtyssh.png*)
+
+![DVWASSH](https://github.com/mbergin123/mbergin123/blob/main/images/DVWAputtySHH.png)
 
 #### Step 11: Protocol Hierarchy
 
 Analyzed protocol distribution: 84% UDP, 15% TCP; breakdown included Telnet, SSH, FTP, TFTP.
-(*Screenshot: ProtocolH.png*)
+
+![Protocol_H](https://github.com/mbergin123/mbergin123/blob/main/images/ProtoclH.png)
 
 #### Step 12: Packet Length Statistics
 
 Observed most packets in **40–79 bytes (48%)** and **320–639 bytes (42%)** range.
-(*Screenshot: PacketL.png*)
+
+![Packet_Length](https://github.com/mbergin123/mbergin123/blob/main/images/PacketL.png)
 
 ---
 
@@ -243,14 +183,21 @@ Observed most packets in **40–79 bytes (48%)** and **320–639 bytes (42%)** r
 * Opened FileZilla dashboard
 * Uploaded `AnyConnect_adminguide.pdf` to **172.30.0.10**
 * Verified file present on remote desktop
-  (*Screenshots: FileZillaDash.png, FileUpload.png, loadedonServer.png*)
+  
+  ![FileZilla_Dashboard](https://github.com/mbergin123/mbergin123/blob/main/images/FileZillaDash.png)
+  ![File_Uploaded](
+  ![File_Loaded_on_Server](https://github.com/mbergin123/mbergin123/blob/main/images/loadedonServer.png)
 
 #### Step 14: Tftpd64 Transfers
 
 * Launched Tftpd64 dashboard
 * PUT `AnyConnect_adminguide.pdf` from **172.30.0.2 → 172.30.0.10** (9428 blocks transferred)
 * Verified file present on **172.30.0.2** via directory listing
-  (*Screenshots: tftp64Dash.png, tftp64Transfer.png, tftp64Proof.png*)
+  
+  ![Tftp64_Dashboard](https://github.com/mbergin123/mbergin123/blob/main/images/tftp64Dash.png)
+  ![Tftp64_Transfer](https://github.com/mbergin123/mbergin123/blob/main/images/tftpTransfer.png)
+  ![Tfrpd64_Verify](https://github.com/mbergin123/mbergin123/blob/main/images/tftp64proof.png)
+  
 
 ---
 
@@ -259,12 +206,14 @@ Observed most packets in **40–79 bytes (48%)** and **320–639 bytes (42%)** r
 #### Step 15: Launch NetWitness Investigator
 
 Opened dashboard on **172.30.0.10**.
-(*Screenshot: NetWisDash.png*)
+
+![NetWitness_Investigator_Dashboard](https://github.com/mbergin123/mbergin123/blob/main/images/NetWisDash.png)
 
 #### Step 16: Import Wireshark Capture
 
 Uploaded saved `.pcap` file into Investigator, creating a collection view of services and IPs.
-(*Screenshot: NetWissPacket.png*)
+
+![NetWitness_Packet_Viewing](https://github.com/mbergin123/mbergin123/blob/main/images/NetWisPacket.png)
 
 #### Step 17: Deep Dive on FTP Evidence
 
@@ -272,7 +221,8 @@ Located FTP details revealing:
 
 * Filename: `anyconnect_adminguide.pdf`
 * Password used: `p@ssw0rd!`
-  (*Screenshot: Filename&Pass.png*)
+  
+  ![Filename_and_Password](https://github.com/mbergin123/mbergin123/blob/main/images/Filename%26Pass.png)
 
 ---
 
@@ -292,23 +242,6 @@ This project shows I can move beyond running tools — I:
 * Used **multiple analysis tools** to corroborate findings
 * Documented results in a professional, reproducible way
 
-Employers can trust that I understand not just **how** to use these tools, but also **why** they matter in network security and incident response.
+I combined hands-on tool usage with an awareness of their strategic value in network defense and incident response
 
 ---
-
-### 📸 Screenshots Placement Guide
-
-* **Topology/Setup:** topology.png, tools_software.png
-* **TCPdump/DVWA:** FirstPutty.png → ThisIsVul.png
-* **tcpdump validation:** ResultsOfCap.png, AlertScriptFound.png
-* **Wireshark:** WSstart.png, ProtocolH.png, PacketL.png
-* **Switch/Router commands:** showinter.png, showvlan.png, showint2.png
-* **DVWA SSH:** DVWAputtyssh.png
-* **FileZilla:** FileZillaDash.png, FileUpload.png, loadedonServer.png
-* **Tftpd64:** tftp64Dash.png, tftp64Transfer.png, tftp64Proof.png
-* **NetWitness:** NetWisDash.png, NetWissPacket.png, Filename&Pass.png
-
----
-
-**End of Section 1 Project Compilation**
-
