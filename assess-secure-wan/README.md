@@ -159,8 +159,8 @@ tcpdump -i eth0 -w marilyn_capture.pcap host 100.30.10.238
 
 ---
 
-## License & contact
-This repository is a lab demo for assessment & remediation techniques — not production configuration. Contact: `you@example.com`
+## License
+This repository is a lab demo for assessment & remediation techniques — not production configuration. This lab was produced by Jones & Barlett Learning.
 
 
 
