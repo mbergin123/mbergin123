@@ -16,7 +16,8 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | SOAR Engineering & Response Automation| [SOAR EDR Project](https://github.com/mbergin123/mbergin123/blob/main/soar-edr-project/README.md)
 | Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer)|
 | PCAP Network Forensics & Exploit Analysis   | [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab)                  |
-| Vulnerability Assessment & Remediation | [Assessing & Securing Systems on WAN](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md)
+| Vulnerability Assessment & Remediation | [Assessing & Securing Systems on WAN](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md)|
+| Traffic Baseline Creation & Anomaly Detection| [Analyzing Network Traffic to Create a Baseline Definition](https://github.com/mbergin123/mbergin123/blob/main/Analyzing%20Network%20Traffic/README.md)|
 
 
 ## Tools
