@@ -15,7 +15,7 @@ Hands-on lab demonstrating reconnaissance, malware removal, and host hardening a
 2. [Lab parts (what I did)](#lab-parts-what-i-did)  
 3. [Key commands (copy/paste-ready)](#key-commands-copypaste-ready)  
 4. [Findings (concise)](#findings-concise)  
-5. [Before / after comparison](#before--after-comparison)  
+5. [Before / after comparison](#before--after--comparison)  
 6. [Evidence images (ordered)](#evidence-images-ordered)  
 7. [How I verified remediation](#how-i-verified-remediation)  
 8. [Recommendations & next steps](#recommendations--next-steps)  
