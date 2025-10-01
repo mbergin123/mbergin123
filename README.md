@@ -16,7 +16,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | SOAR Engineering & Response Automation| [SOAR EDR Project](https://github.com/mbergin123/mbergin123/blob/main/soar-edr-project/README.md)
 | Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer)|
 | PCAP Network Forensics & Exploit Analysis   | [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab)                  |
-
+| Vulnerability Assessment & Remediation | [Assessing & Securing Systems on WAN](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md)
 
 
 ## Tools
@@ -108,6 +108,8 @@ My journey in computer science has led me to develop a passion for cybersecurity
 - [🌐 Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer): Investigated browser artifacts from a forensic image to uncover a hidden cryptomining Chrome extension using FTK Imager, BrowserHistoryView, and manual JavaScript analysis.
 
 - 🐱 [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab): Conducted a forensic investigation of a web server compromise using Wireshark and CyberChef to analyze a PCAP file, extract malicious payloads, and answer incident response questions.
+
+- 🔍 [Network & Reconnaissance Result](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md): End-to-end vulnerability assessment & remediation on an isolated WAN — discovery with Nmap (NSE), traffic capture with tcpdump, malware removal via ClamWin/AVG, and host hardening using Windows Firewall (commands, logs, and evidence included)
 
 
 
