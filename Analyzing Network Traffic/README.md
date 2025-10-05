@@ -7,6 +7,9 @@
 
 This project demonstrates capturing, transferring, and analyzing network traffic to establish a **network baseline**. The lab simulates a real-world enterprise environment with servers, routers, switches, and vulnerable applications. Using tools such as **TCPdump, Wireshark, FileZilla, Tftpd64, and NetWitness Investigator**, I captured normal and malicious traffic, analyzed protocol distributions, and verified file transfers across the environment.
 
+### Why It’s Important
+Understanding how to capture and analyze network traffic is essential for maintaining secure and reliable systems. Establishing a network baseline allows security professionals to distinguish between normal and abnormal activity, which is critical for detecting threats such as malware infections, data exfiltration, or unauthorized access. By analyzing traffic with tools like TCPdump, Wireshark, and NetWitness, I developed the ability to identify vulnerabilities, monitor real-time communication patterns, and validate the integrity of network operations. This skill is foundational in cybersecurity, as it transforms raw network data into actionable insights for prevention, detection, and incident response.
+
 This documentation highlights an end-to-end demonstration of real-world skills in:
 
 * Packet capture and command-line analysis
