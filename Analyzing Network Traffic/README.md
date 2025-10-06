@@ -119,7 +119,7 @@ Accessed DVWA homepage and modules to create baseline HTTP traffic.
 * Set DVWA security level to *low*
 * Tested XSS reflected input with name *Simon*
 * Confirmed XSS vulnerability with `<script>alert('this is a vulnerability');</script>`
-  (*Screenshots: DVWAStart.png, LevelLow.png, XXSReflected.png, ThisIsVul.png*)
+  
   ![DWS_GUI](https://github.com/mbergin123/mbergin123/blob/main/images/DVWAStart.png)
   ![Low_level](https://github.com/mbergin123/mbergin123/blob/main/images/LevelLow.png)
   ![Simon](https://github.com/mbergin123/mbergin123/blob/main/images/XXSReflected.png)
