@@ -18,78 +18,130 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | PCAP Network Forensics & Exploit Analysis   | [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab)                  |
 | Vulnerability Assessment & Remediation | [Assessing & Securing Systems on WAN](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md)|
 | Traffic Baseline Creation & Anomaly Detection| [Analyzing Network Traffic to Create a Baseline Definition](https://github.com/mbergin123/mbergin123/blob/main/Analyzing%20Network%20Traffic/README.md)|
+| Wireless Security & WLAN Auditing | [Wireless Security & WLAN Auditing Project](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation/blob/main/README.md)
 
 
-## Tools
+## 🛠️ Tools
 
-### Network
+Below is a categorized list of security tools and technologies I use across my projects, including network analysis, wireless auditing, SIEM, SOAR, forensics, malware analysis, and red-team operations.
+
+---
+
+### 🛰️ Network Analysis & Monitoring
 <div>
-    <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Netcat-2E8B57?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-    <img src="https://img.shields.io/badge/-pfSense-003a63?style=for-the-badge&logo=freebsd&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/-PuTTY-000000?&style=for-the-badge&logo=putty&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/-tcpdump-000000?&style=for-the-badge&logo=linux&logoColor=white" />
-
-
+  <img src="https://img.shields.io/badge/-Wireshark-1679A7?style=for-the-badge&logo=Wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Suricata-EF3B2D?style=for-the-badge&logo=Suricata&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Zeek-777BB4?style=for-the-badge&logo=Zeek&logoColor=white" />
+  <img src="https://img.shields.io/badge/-tcpdump-000000?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Netcat-2E8B57?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/-pfSense-003a63?style=for-the-badge&logo=freebsd&logoColor=white" />
 </div>
 
-### Endpoint
+---
+
+### 📡 Wireless Security
 <div>
-    <img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
-    <img src="https://img.shields.io/badge/-REMux-005A9C?style=for-the-badge&logo=windows&logoColor=white" />
-    <img src="https://img.shields.io/badge/-FTK%20Imager-000000?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/-ClamWin-5C5C5C?&style=for-the-badge&logo=linux&logoColor=white" />
-    <img src="https://img.shields.io/badge/-AVG-2B9BD6?&style=for-the-badge&logo=avg&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Aircrack--ng-2C3E50?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Kismet-4C1D95?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Fern%20WiFi%20Cracker-1E3A8A?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-WiFi%20Pineapple-000000?style=for-the-badge&logo=hackthebox&logoColor=white" />
 </div>
 
-### SIEM
-<div>
-    <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
+---
 
+### 🛡️ EDR & Endpoint Security
+<div>
+  <img src="https://img.shields.io/badge/-Microsoft_Defender-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Velociraptor-4B275F?style=for-the-badge&logo=velociraptor&logoColor=white" />
+  <img src="https://img.shields.io/badge/-LimaCharlie-00A4EF?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CrowdStrike-FF0000?style=for-the-badge&logo=crowdstrike&logoColor=white" />
 </div>
 
-### 🛡️ Vulnerability Scanning
-<div>
-    <img src="https://img.shields.io/badge/-Nessus-007EC6?style=for-the-badge&logo=tenable&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Nmap-7C8BFF?&style=for-the-badge&logo=nmap&logoColor=white" /> 
+---
 
+### 🛰️ SIEM Platforms
+<div>
+  <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?style=for-the-badge&logo=Microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Splunk-000000?style=for-the-badge&logo=Splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Elastic_SIEM-005571?style=for-the-badge&logo=Elastic&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Wazuh-0A84FF?style=for-the-badge&logo=wazuh&logoColor=white" />
+  <img src="https://img.shields.io/badge/-OpenSearch-005EB8?style=for-the-badge&logo=opensearch&logoColor=white" />
 </div>
 
-### 🧪 Forensics
+---
+
+### 🤖 SOAR & Automation
 <div>
+  <img src="https://img.shields.io/badge/-Tines-6A5ACD?style=for-the-badge&logo=robot&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Python_Automation-14354C?style=for-the-badge&logo=python&logoColor=white" />
+</div>
+
+---
+
+### ☁️ Cloud Security & Infrastructure
+<div>
+  <img src="https://img.shields.io/badge/-Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Azure_Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Azure_Defender-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Azure_AD-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/-AWS_Security-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/-AWS_CloudTrail-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/-AWS_GuardDuty-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VMware-607078?style=for-the-badge&logo=vmware&logoColor=white" />
+</div>
+
+---
+
+### 🛠️ Vulnerability Assessment
+<div>
+  <img src="https://img.shields.io/badge/-Nessus-007EC6?style=for-the-badge&logo=tenable&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Nmap-7C8BFF?style=for-the-badge&logo=nmap&logoColor=white" />
+</div>
+
+---
+
+### 🧬 Forensics & Malware Analysis
+<div>
+  <img src="https://img.shields.io/badge/-REMnux-DB4437?style=for-the-badge&logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/-FTK%20Imager-black?style=for-the-badge" />
   <img src="https://img.shields.io/badge/-BrowsingHistoryView-0078D7?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/-Notepad-black?style=for-the-badge&logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Google%20Search-34A853?style=for-the-badge&logo=Google&logoColor=white" />
+  <img src="https://img.shields.io/badge/-HxD_Editor-ED1C24?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CyberChef-6528B1?style=for-the-badge&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VirusTotal-0278D7?style=for-the-badge&logo=virustotal&logoColor=white" />
 </div>
 
-### 🎯 Offensive Tools
+---
+
+### 🎯 Red Team & Offensive Tools
 <div>
-<img src="https://img.shields.io/badge/-Hydra-000000?style=for-the-badge&logo=OpenSSL&logoColor=white" />
-<img src="https://img.shields.io/badge/-Mythic%20C2-8A2BE2?style=for-the-badge&logo=metasploit&logoColor=white" />
-<img src="https://img.shields.io/badge/-Crowbar-black?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Metasploit-03A9F4?style=for-the-badge&logo=metasploit&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Hydra-000000?style=for-the-badge&logo=openssl&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Mythic_C2-8A2BE2?style=for-the-badge&logo=metasploit&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Crowbar-black?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
 </div>
 
-### 🛠️ Utility Tools
+---
+
+### 🔧 Utility Tools
 <div>
-<img src="https://img.shields.io/badge/-CyberChef-6528B1?style=for-the-badge&logo=codeforces&logoColor=white" />
-<img src="https://img.shields.io/badge/-VirusTotal-0078D7?style=for-the-badge&logo=virustotal&logoColor=white" />
-<img src="https://img.shields.io/badge/-Shodan-FF0000?style=for-the-badge&logo=shodan&logoColor=white" />
-<img src="https://img.shields.io/badge/-MalwareBazaar-3C3C3C?style=for-the-badge&logo=virustotal&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CyberChef-6528B1?style=for-the-badge&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Shodan-FF0000?style=for-the-badge&logo=shodan&logoColor=white" />
+  <img src="https://img.shields.io/badge/-MalwareBazaar-3C3C3C?style=for-the-badge&logo=virustotal&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VirusTotal-0078D7?style=for-the-badge&logo=virustotal&logoColor=white" />
 </div>
 
-### <h3>Host hardening / Windows config</h3>
+---
+
+### 🔐 Host Hardening / Windows Configuration
 <div>
-    <img src="https://img.shields.io/badge/-Windows_Firewall-0078D6?&style=for-the-badge&logo=windows&logoColor=white" />
-    <img src="https://img.shields.io/badge/-netsh-008080?&style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Windows_Firewall-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-netsh-000080?style=for-the-badge&logo=windows&logoColor=white" />
 </div>
+
+---
 
 
 
@@ -110,6 +162,10 @@ My journey in computer science has led me to develop a passion for cybersecurity
 - 🐱 [Tomcat Take Over Lab](https://github.com/mbergin123/Tomcat-Takeover-Lab): Conducted a forensic investigation of a web server compromise using Wireshark and CyberChef to analyze a PCAP file, extract malicious payloads, and answer incident response questions.
 
 - 🔍 [Network & Reconnaissance Result](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md): End-to-end vulnerability assessment & remediation on an isolated WAN — discovery with Nmap (NSE), traffic capture with tcpdump, malware removal via ClamWin/AVG, and host hardening using Windows Firewall (commands, logs, and evidence included)
+
+- 🔐 [WLAN Audit & Security Implementation](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation): 
+  Performed a full WLAN security assessment using Aircrack-ng and Kali Linux, including packet capture, WPA handshake cracking, 
+  encryption analysis, risk identification, and development of an enterprise-grade WLAN security implementation plan.
 
 
 
