@@ -152,6 +152,8 @@ Below is a categorized list of security tools and technologies I use across my p
 
 </div>
 
+---
+
 ## Projects
 - [RDP C2 Simulation](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation): Simulated red team attack using Hydra, Mythic C2, and ELK stack to gain access, exfiltrate data, and visualize activity.
 
