@@ -19,7 +19,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Vulnerability Assessment & Remediation | [Assessing & Securing Systems on WAN](https://github.com/mbergin123/mbergin123/blob/main/assess-secure-wan/README.md)|
 | Traffic Baseline Creation & Anomaly Detection| [Analyzing Network Traffic to Create a Baseline Definition](https://github.com/mbergin123/mbergin123/blob/main/Analyzing%20Network%20Traffic/README.md)|
 | Wireless Security & WLAN Auditing | [Wireless Security & WLAN Auditing Project](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation/blob/main/README.md)
-
+| Applying Encryption & Hashing Algorithms for Secure Communication| [Applying Encryption For Secure Communication](https://github.com/mbergin123/Applying-Encryption-And-Hashing-Algorithms-for-Secure-Communication/edit/main/README.md)
 
 ## 🛠️ Tools
 
