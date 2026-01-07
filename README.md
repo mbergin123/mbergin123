@@ -21,6 +21,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Wireless Security & WLAN Auditing | [Wireless Security & WLAN Auditing Project](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation/blob/main/README.md)
 | Applying Encryption & Hashing Algorithms for Secure Communication| [Applying Encryption For Secure Communication](https://github.com/mbergin123/Applying-Encryption-And-Hashing-Algorithms-for-Secure-Communication/blob/main/README.md)
 | Patch Management, System Hardening & Endpoint Protection | [Patching, Securing Systems, and Configuring Anti-Virus (Purple Team Lab)](https://github.com/mbergin123/Patching-Securing-Systems-AntiVirus/blob/main/README.md)
+| Wireless Security Assessment & Traffic Decryption | [Breaking WEP & WPA and Decrypting Wireless Traffic](https://github.com/mbergin123/Breaking-WEP-WPA-And-Decrypting-Wireless-Traffic/blob/main/README.md)
 
 ## 🛠️ Tools
 
@@ -173,4 +174,6 @@ Below is a categorized list of security tools and technologies I use across my p
 - 🛡️ [Patching, Securing Systems, and Configuring Anti-Virus (Purple Team Lab)](https://github.com/mbergin123/Patching-Securing-Systems-AntiVirus/blob/main/README.md)
   Simulated exploitation of an unpatched Windows Server followed by patch management, system hardening, and anti-virus deployment to detect malware and prevent     reinfection, with full evidence and validation.
 
+- 📡 [Breaking WEP & WPA and Decrypting Wireless Traffic](https://github.com/mbergin123/Breaking-WEP-WPA-And-Decrypting-Wireless-Traffic):
+Demonstrated wireless security assessment by capturing encrypted 802.11 traffic, cracking WEP and WPA keys, decrypting packet captures, and analyzing credentials and application-layer data using Aircrack-ng, Airdecap-ng, and Wireshark.
 
