@@ -20,6 +20,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Traffic Baseline Creation & Anomaly Detection| [Analyzing Network Traffic to Create a Baseline Definition](https://github.com/mbergin123/mbergin123/blob/main/Analyzing%20Network%20Traffic/README.md)|
 | Wireless Security & WLAN Auditing | [Wireless Security & WLAN Auditing Project](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation/blob/main/README.md)
 | Applying Encryption & Hashing Algorithms for Secure Communication| [Applying Encryption For Secure Communication](https://github.com/mbergin123/Applying-Encryption-And-Hashing-Algorithms-for-Secure-Communication/blob/main/README.md)
+| Patch Management, System Hardening & Endpoint Protection | [Patching, Securing Systems, and Configuring Anti-Virus (Purple Team Lab)](https://github.com/mbergin123/Patching-Securing-Systems-AntiVirus/blob/main/README.md)
 
 ## 🛠️ Tools
 
@@ -168,6 +169,8 @@ Below is a categorized list of security tools and technologies I use across my p
 - 🔐 [WLAN Audit & Security Implementation](https://github.com/mbergin123/WLAN-Audit-and-Security-Implementation): 
   Performed a full WLAN security assessment using Aircrack-ng and Kali Linux, including packet capture, WPA handshake cracking, 
   encryption analysis, risk identification, and development of an enterprise-grade WLAN security implementation plan.
-
+  
+- 🛡️ [Patching, Securing Systems, and Configuring Anti-Virus (Purple Team Lab)](https://github.com/mbergin123/Patching-Securing-Systems-AntiVirus/blob/main/README.md)
+  Simulated exploitation of an unpatched Windows Server followed by patch management, system hardening, and anti-virus deployment to detect malware and prevent     reinfection, with full evidence and validation.
 
 
