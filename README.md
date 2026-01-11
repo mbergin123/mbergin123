@@ -176,4 +176,5 @@ Below is a categorized list of security tools and technologies I use across my p
 
 - 📡 [Breaking WEP & WPA and Decrypting Wireless Traffic](https://github.com/mbergin123/Breaking-WEP-WPA-And-Decrypting-Wireless-Traffic):
 Demonstrated wireless security assessment by capturing encrypted 802.11 traffic, cracking WEP and WPA keys, decrypting packet captures, and analyzing credentials and application-layer data using Aircrack-ng, Airdecap-ng, and Wireshark.
-
+- 🔍 [Phishing Email Detection Lab](https://github.com/mbergin123/Email-Phishing-Detection-Lab/blob/main/README.md):
+Evaluated real-world phishing and social engineering scenarios by analyzing suspicious and legitimate emails, identifying attack indicators, and applying risk-based decisions with documented evidence
