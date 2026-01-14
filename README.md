@@ -22,7 +22,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Applying Encryption & Hashing Algorithms for Secure Communication| [Applying Encryption For Secure Communication](https://github.com/mbergin123/Applying-Encryption-And-Hashing-Algorithms-for-Secure-Communication/blob/main/README.md)
 | Patch Management, System Hardening & Endpoint Protection | [Patching, Securing Systems, and Configuring Anti-Virus (Purple Team Lab)](https://github.com/mbergin123/Patching-Securing-Systems-AntiVirus/blob/main/README.md)
 | Wireless Security Assessment & Traffic Decryption | [Breaking WEP & WPA and Decrypting Wireless Traffic](https://github.com/mbergin123/Breaking-WEP-WPA-And-Decrypting-Wireless-Traffic/blob/main/README.md)
-
+| Incident Response & Digital Forensics (Host & Network Analysis) | [Finding Malicious Indicators](https://github.com/mbergin123/Finding-Malicious-Indicators/blob/main/README.md)
 ## 🛠️ Tools
 
 Below is a categorized list of security tools and technologies I use across my projects, including network analysis, wireless auditing, SIEM, SOAR, forensics, malware analysis, and red-team operations.
