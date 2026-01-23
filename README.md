@@ -6,7 +6,7 @@ I have a profound interest in technology and dedication to solving complex probl
 
 ## Objective
 
-My journey in computer science has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
+Motivated cybersecurity professional seeking a Tier 1 SOC Analyst role, with hands-on experience in threat detection, incident response, and security monitoring across Windows and Linux environments. Eager to contribute to a Security Operations Center by analyzing alerts, investigating suspicious activity, and supporting rapid incident response efforts.
 
 ## Skills
 
