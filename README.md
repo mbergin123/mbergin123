@@ -12,6 +12,7 @@ Motivated cybersecurity professional seeking a Tier 1 SOC Analyst role, with han
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
+| Incident Response & Memory Forensics | [Investigating a Network Compromise](https://github.com/mbergin123/investigating-a-network-compromise) |
 | Pen Testing & Forensics Investigations | [Mythic C2 Project](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)
 | SOAR Engineering & Response Automation| [SOAR EDR Project](https://github.com/mbergin123/mbergin123/blob/main/soar-edr-project/README.md)
 | Browser Forensics & Extension Analysis | [Browser Forensics - Cryptominer Lab](https://github.com/mbergin123/browser-forensics-cryptominer)|
