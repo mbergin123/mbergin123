@@ -158,6 +158,8 @@ Below is a categorized list of security tools and technologies I use across my p
 ---
 
 ## Projects
+- 🕵️‍♂️ [Network Enumeration & Vulnerability Assessment](https://github.com/mbergin123/network-enumeration-nmap-metasploit): Performed internal network discovery, OS identification, SMB share enumeration, and patch-level vulnerability assessment using Nmap and Metasploit to identify exposed systems, sensitive data access, and missing security updates.
+
 - [RDP C2 Simulation](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation): Simulated red team attack using Hydra, Mythic C2, and ELK stack to gain access, exfiltrate data, and visualize activity.
 
 - [🔍 Suspicious USB Lab](https://github.com/mbergin123/suspicious-usb-lab) – Forensic investigation of a suspicious USB device using REMnux and open-source tools like FTK Imager and BrowsingHistoryView.
@@ -177,5 +179,8 @@ Below is a categorized list of security tools and technologies I use across my p
 
 - 📡 [Breaking WEP & WPA and Decrypting Wireless Traffic](https://github.com/mbergin123/Breaking-WEP-WPA-And-Decrypting-Wireless-Traffic):
 Demonstrated wireless security assessment by capturing encrypted 802.11 traffic, cracking WEP and WPA keys, decrypting packet captures, and analyzing credentials and application-layer data using Aircrack-ng, Airdecap-ng, and Wireshark.
+
 - 🔍 [Phishing Email Detection Lab](https://github.com/mbergin123/Email-Phishing-Detection-Lab/blob/main/README.md):
 Evaluated real-world phishing and social engineering scenarios by analyzing suspicious and legitimate emails, identifying attack indicators, and applying risk-based decisions with documented evidence
+
+
