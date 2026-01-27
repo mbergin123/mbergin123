@@ -158,6 +158,9 @@ Below is a categorized list of security tools and technologies I use across my p
 ---
 
 ## Projects
+
+- 🛡️ [Cross-Platform Vulnerability Assessment & Remediation](https://github.com/mbergin123/-Cross-Platform-Vulnerability-Assessment-Remediation/blob/main/README.md): Conducted full lifecycle vulnerability assessment across a Windows workstation and multiple Linux servers, including asset scoping, misconfiguration identification, account and policy hardening, firewall enforcement, and post-remediation verification. Demonstrated cross-platform vulnerability management, risk analysis, and remediation planning aligned with SOC and vulnerability analyst workflows.
+
 - 🕵️‍♂️ [Network Enumeration & Vulnerability Assessment](https://github.com/mbergin123/network-enumeration-nmap-metasploit): Performed internal network discovery, OS identification, SMB share enumeration, and patch-level vulnerability assessment using Nmap and Metasploit to identify exposed systems, sensitive data access, and missing security updates.
 
 - [RDP C2 Simulation](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation): Simulated red team attack using Hydra, Mythic C2, and ELK stack to gain access, exfiltrate data, and visualize activity.
