@@ -12,6 +12,7 @@ Motivated cybersecurity professional seeking a Tier 1 SOC Analyst role, with han
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
+| Network Exploitation & Post Exploitation Impact Assestment | [Exploiting and Post Exploiting a Network](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md)
 | Incident Response & Memory Forensics | [Investigating a Network Compromise](https://github.com/mbergin123/investigating-a-network-compromise) |
 | Pen Testing & Forensics Investigations | [Mythic C2 Project](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)
 | SOAR Engineering & Response Automation| [SOAR EDR Project](https://github.com/mbergin123/mbergin123/blob/main/soar-edr-project/README.md)
@@ -158,6 +159,7 @@ Below is a categorized list of security tools and technologies I use across my p
 ---
 
 ## Projects
+- 🛠️ [Network Exploitation & Post-Exploitation Impact Assessment](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md): Conducted a controlled internal penetration test against Windows systems to identify and validate critical SMB vulnerabilities (MS17-010), demonstrating full attack lifecycle from reconnaissance and exploitation to credential exposure and post-exploitation impact analysis using Nmap, OpenVAS, and Metasploit.
 
 - 🛡️ [Cross-Platform Vulnerability Assessment & Remediation](https://github.com/mbergin123/-Cross-Platform-Vulnerability-Assessment-Remediation/blob/main/README.md): Conducted full lifecycle vulnerability assessment across a Windows workstation and multiple Linux servers, including asset scoping, misconfiguration identification, account and policy hardening, firewall enforcement, and post-remediation verification. Demonstrated cross-platform vulnerability management, risk analysis, and remediation planning aligned with SOC and vulnerability analyst workflows.
 
