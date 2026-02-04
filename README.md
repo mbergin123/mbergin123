@@ -159,6 +159,9 @@ Below is a categorized list of security tools and technologies I use across my p
 ---
 
 ## Projects
+
+- 🐧 [Linux Attack & Incident Response Investigation](https://github.com/mbergin123/Linux-Attack-and-Response-Lab/blob/main/README.md): Executed a client-side Java web exploit against an Ubuntu system to establish remote access and privilege escalation, then performed full incident response and forensic triage including volatile data collection, authentication log analysis (auth.log, wtmp, btmp), session timeline reconstruction, and documentation of indicators of compromise.
+
 - 🛠️ [Network Exploitation & Post-Exploitation Impact Assessment](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md): Conducted a controlled internal penetration test against Windows systems to identify and validate critical SMB vulnerabilities (MS17-010), demonstrating full attack lifecycle from reconnaissance and exploitation to credential exposure and post-exploitation impact analysis using Nmap, OpenVAS, and Metasploit.
 
 - 🛡️ [Cross-Platform Vulnerability Assessment & Remediation](https://github.com/mbergin123/-Cross-Platform-Vulnerability-Assessment-Remediation/blob/main/README.md): Conducted full lifecycle vulnerability assessment across a Windows workstation and multiple Linux servers, including asset scoping, misconfiguration identification, account and policy hardening, firewall enforcement, and post-remediation verification. Demonstrated cross-platform vulnerability management, risk analysis, and remediation planning aligned with SOC and vulnerability analyst workflows.
