@@ -6,7 +6,7 @@ I have a profound interest in technology and dedication to solving complex probl
 
 ## Objective
 
-Motivated cybersecurity professional seeking a Tier 1 SOC Analyst role, with hands-on experience in threat detection, incident response, and security monitoring across Windows and Linux environments. Eager to contribute to a Security Operations Center by analyzing alerts, investigating suspicious activity, and supporting rapid incident response efforts.
+Motivated cybersecurity professional pursuing a Purple Team–oriented role focused on understanding how systems are built, how they are compromised, and how defenses can be improved. Brings hands-on experience in infrastructure security, log analysis, vulnerability assessment, and attack–defense simulations across Windows and Linux environments, with a strong emphasis on clear documentation and defensive insight.
 
 ## Skills
 
