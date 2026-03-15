@@ -12,6 +12,7 @@ Motivated cybersecurity professional pursuing a Purple Team–oriented role focu
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
+| Business Email Compromise Investigation | [Bec-Ky Investigation](https://github.com/mbergin123/BEC-KY/blob/main/README.md)
 | Network Exploitation & Post Exploitation Impact Assestment | [Exploiting and Post Exploiting a Network](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md)
 | Incident Response & Memory Forensics | [Investigating a Network Compromise](https://github.com/mbergin123/investigating-a-network-compromise) |
 | Pen Testing & Forensics Investigations | [Mythic C2 Project](https://github.com/mbergin123/mbergin123/tree/main/rdp-c2-simulation)
@@ -190,5 +191,5 @@ Demonstrated wireless security assessment by capturing encrypted 802.11 traffic,
 
 - 🔍 [Phishing Email Detection Lab](https://github.com/mbergin123/Email-Phishing-Detection-Lab/blob/main/README.md):
 Evaluated real-world phishing and social engineering scenarios by analyzing suspicious and legitimate emails, identifying attack indicators, and applying risk-based decisions with documented evidence
-
+- 🔍 [BEC Email Compromise Investigation](https://github.com/mbergin123/BEC-KY/blob/main/README.md): nalyzed phishing emails and Azure audit logs to identify attacker infrastructure, mailbox rule abuse, and a fraudulent pension fund transfer in a Business Email Compromise attack.
 
