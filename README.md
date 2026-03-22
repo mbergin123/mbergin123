@@ -162,6 +162,8 @@ Below is a categorized list of security tools and technologies I use across my p
 
 ## Projects
 
+- 🤖 [AI-Powered SOC Log Triage & Incident Response](https://github.com/mbergin123/AI-Powered-SOC-Log-Triage-Incident-Response): Developed a Python-based SOC triage tool on Ubuntu to analyze authentication logs, detect brute-force activity, extract indicators of compromise (IOCs), classify incident severity, and integrate AI to generate automated incident analysis and response recommendations.
+  
 - 🐧 [Linux Attack & Incident Response Investigation](https://github.com/mbergin123/Linux-Attack-and-Response-Lab/blob/main/README.md): Executed a client-side Java web exploit against an Ubuntu system to establish remote access and privilege escalation, then performed full incident response and forensic triage including volatile data collection, authentication log analysis (auth.log, wtmp, btmp), session timeline reconstruction, and documentation of indicators of compromise.
 
 - 🛠️ [Network Exploitation & Post-Exploitation Impact Assessment](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md): Conducted a controlled internal penetration test against Windows systems to identify and validate critical SMB vulnerabilities (MS17-010), demonstrating full attack lifecycle from reconnaissance and exploitation to credential exposure and post-exploitation impact analysis using Nmap, OpenVAS, and Metasploit.
