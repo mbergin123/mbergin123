@@ -12,6 +12,7 @@ Motivated cybersecurity professional pursuing a Purple Team–oriented role focu
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
+| AI-Driven SOC Triage & Incident Response | [AI-Powered SOC Log Triage](https://github.com/mbergin123/AI-Powered-SOC-Log-Triage-Incident-Response)
 | Business Email Compromise Investigation | [Bec-Ky Investigation](https://github.com/mbergin123/BEC-KY/blob/main/README.md)
 | Network Exploitation & Post Exploitation Impact Assestment | [Exploiting and Post Exploiting a Network](https://github.com/mbergin123/Network-Exploitation-Post-Exploitation-Impact-Assessment/blob/main/README.md)
 | Incident Response & Memory Forensics | [Investigating a Network Compromise](https://github.com/mbergin123/investigating-a-network-compromise) |
